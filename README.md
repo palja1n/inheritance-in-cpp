@@ -14,13 +14,30 @@ Inheritance promotes code reusability, reduces duplication, and establishes rela
 
 A derived class automatically contains the members of the base class, except for constructors, destructors, and private members (though private members can be accessed through public/protected functions of the base class).
 
-### Types of Inheritance in C++
-- **Single Inheritance** – One base class and one derived class.
-- **Multiple Inheritance** – One derived class inherits from two or more base classes.
-- **Multilevel Inheritance** – A class is derived from another derived class, forming a chain.
-- **Hierarchical Inheritance** – Multiple classes are derived from a single base class.
 
-### Access Specifiers
+### **Types of Inheritance in C++**
+
+* **Single Inheritance**
+  In single inheritance, one base class is inherited by a single derived class.
+  This allows the derived class to reuse and extend the functionality of the base class, promoting code reusability and reducing redundancy.  
+
+* **Multiple Inheritance**
+  In multiple inheritance, a single derived class inherits from **two or more base classes**.
+  This enables the derived class to combine and use functionalities from multiple base classes, allowing more complex relationships and feature combinations.
+
+
+* **Multilevel Inheritance**
+  In multilevel inheritance, a class is derived from another derived class, forming a chain of inheritance.
+  This demonstrates how properties and methods are passed down through multiple layers of inheritance, helping to organize and structure code in a hierarchical manner.
+
+
+* **Hierarchical Inheritance**
+  In hierarchical inheritance, **multiple derived classes inherit from a single base class**.
+  This structure allows one common base class to provide shared properties and methods to several specialized derived classes, improving code organization and avoiding duplication.
+
+
+
+### Access Specifiers:
 - **Public** – Accessible everywhere.
 - **Private** – Accessible only within the class where it is defined.
 - **Protected** – Accessible in the base class and derived class, but not outside.
@@ -222,7 +239,7 @@ The base class `Habitat` has a function `location()` declared as `protected`, wh
 The derived class `Fish` provides a public wrapper function `showLocation()` to safely access the protected `location()` function.
 Similarly, a private member `mammal` in `Fish` cannot be accessed directly from `main()`.
 Instead, a public function `showMammal()` is provided to display the private data.
-This shows how access specifiers control member visibility and access across base and derived classes, enforcing encapsulation and proper access control. 🌊🐟
+This shows how access specifiers control member visibility and access across base and derived classes, enforcing encapsulation and proper access control. 
 
 ---
 
