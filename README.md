@@ -1,8 +1,8 @@
 # Inheritance in C++
 
-Name: Pal Jain
-PRN: 24070123067
-Class: ENTC A3
+Name: Pal Jain  
+PRN: 24070123067  
+Class: ENTC A3  
 
 ## Aim
 To study different types of inheritance in C++ such as single, multiple, multilevel, and hierarchical inheritance, along with the role of access specifiers.
